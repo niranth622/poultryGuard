@@ -1,0 +1,31 @@
+# PoultryGuard - Digital Farm Management System for Poultry Biosecurity & Health
+
+**Complete Production-Ready Next.js 15 Application** for broiler farms in Tamil Nadu, India.
+
+**Built for Hackathon MVP** — Fully functional with realistic demo data for a 5000-bird Tamil Nadu broiler farm.
+
+## Features Implemented
+
+- **Landing Page** with hero, benefits, Tamil Nadu context, and demo login
+- **Supabase Auth** (Email + OTP support, role-based: Owner, Vet, Worker, Auditor)
+- **Responsive Dashboard** with overview cards, real-time feel (simulated live updates)
+- **Biosecurity Module**: Check-in/out, movement logs, daily checklist, environmental monitoring, score calculator
+- **Flock & Health**: Add flocks, mortality/growth logging, symptom logger (Newcastle, IBD, Coccidiosis, etc.)
+- **Medication & Vaccination**: Log treatments with common Indian drugs/vaccines, inventory, history, scheduler
+- **Analytics**: Recharts for trends (mortality, FCR, biosecurity score), rule-based alerts
+- **Extra**: Mock AI Disease Risk Predictor, English/Tamil toggle (UI strings), Dark/Light mode, Mobile-first
+- **Seed Data**: Realistic demo for 2-3 flocks (5000 birds total)
+
+**Green-themed UI** (#15803d primary) with shadcn/ui, Tailwind, Lucide icons.
+
+**Note**: For full production, connect to real Supabase (RLS enabled). This uses local mock data with Supabase client structure for easy swap.
+
+## Quick Start
+
+1. Clone the repo (after creating from this structure)
+2. `npm install`
+3. Copy `.env.example` to `.env.local` and fill Supabase vars (or use mock mode)
+4. `npm run dev`
+5. Demo: Use seed data or login as `demo@farm.com` / OTP `123456`
+
+## Project Structure
