@@ -1,0 +1,16 @@
+-- Enable RLS later
+CREATE TABLE flocks (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES auth.users,
+  name TEXT,
+  breed TEXT,
+  start_date DATE,
+  initial_count INTEGER,
+  current_count INTEGER,
+  mortality_rate NUMERIC,
+  fcr NUMERIC
+);
+
+-- Similar tables for biosecurity_logs, medication_logs, health_records, environmental_readings, movement_logs
+
+-- Seed function in api/seed/route.ts (POST to /api/seed)
